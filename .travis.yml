@@ -8,4 +8,5 @@ jobs:
     - php: 7.4
 before_script:
   - composer install
-script: composer test
+script:
+  - composer test

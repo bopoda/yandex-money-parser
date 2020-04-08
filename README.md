@@ -1,6 +1,8 @@
 yandex-money-parser
 ====================
 
+[![Build Status](https://travis-ci.org/bopoda/yandex-money-parser.svg?branch=master)](https://travis-ci.org/bopoda/yandex-money-parser)
+
 PHP library (class) to parse yandex money response text
 
 ### Run tests using one of options:
