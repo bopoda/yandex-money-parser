@@ -40,7 +40,7 @@ EOTXT;
      */
     public function testGetCode(string $message, int $expectedCode)
     {
-        $parser = $this->getParser($message);
+        $parser = $this->getParser($message. ' Спишется 3470,36р. Перевод на счет 41001767535737');
 
         $this->assertEquals(
             $expectedCode,
@@ -67,7 +67,7 @@ EOTXT;
      */
     public function testGetAmount(string $message, float $expectedAmount)
     {
-        $parser = $this->getParser($message);
+        $parser = $this->getParser($message. ' Пароль: 1111 Перевод на счет 1111111111');
 
         $this->assertEquals(
             $expectedAmount,
@@ -95,7 +95,7 @@ EOTXT;
 
     public function testGetWallet()
     {
-        $parser = $this->getParser('Перевод на счет 41001767535737');
+        $parser = $this->getParser('Перевод на счет 41001767535737  Пароль: 1111 Спишется 11,11р. ');
 
         $this->assertEquals(
             41001767535737,

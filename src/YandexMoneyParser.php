@@ -69,5 +69,9 @@ class YandexMoneyParser implements YandexMoneyParserInterface
         if (preg_match(self::WALLET_REGEXP, $message, $matches)) {
             $this->wallet = (int)$matches[1];
         }
+
+        if (!$this->code || !$this->wallet || !$this->amount) {
+            throw new UnexpectedMessageException();
+        }
     }
 }
