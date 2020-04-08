@@ -1,8 +1,9 @@
-#yandex-money-parser
+yandex-money-parser
+====================
 
 PHP library (class) to parse yandex money response text
 
-###Run tests using one of options:
+### Run tests using one of options:
 - `composer tests`
 - `php vendor/bin/phpunit`
 
