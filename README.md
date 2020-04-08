@@ -8,7 +8,7 @@ PHP library (class) to parse yandex money response text
 - `php vendor/bin/phpunit`
 
 ### Usage example:
-```
+```php
 $parser = new YandexMoneyParser($message);
 echo $parser->getCode(); 
 echo $parser->getAmount();
