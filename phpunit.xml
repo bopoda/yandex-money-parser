@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="Unit tests">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
